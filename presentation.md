@@ -24,9 +24,10 @@
 
 - et populært grafisk verktøy for å gjøre HTTP-forespørsler
 - i tillegg til REST støttes blant annet SOAP, GraphQL og WebSockets
-- muligheter for å kjøre tester av samlinger (https://learning.postman.com/docs/collections/running-collections/intro-to-collection-runs/)
+- muligheter for å kjøre tester av samlinger[[2]]
 
 [1]: https://www.postman.com/
+[2]: https://learning.postman.com/docs/collections/running-collections/intro-to-collection-runs/
 
 ---
 
@@ -42,14 +43,14 @@
 
 # hva synes datatilsynet om det?
 
-- min tolkning av det datatilsynet sier[[2]] er at jobb-eposten din er personopplysninger som krever behandlingsgrunnlag
+- min tolkning av det datatilsynet sier[[3]] er at jobb-eposten din er personopplysninger som krever behandlingsgrunnlag
 - dersom man ikke har et behandlingsgrunnlag er overføringen ulovlig
 
 - det kan hende at man i noen tilfeller kan kalle det å opprette bruker og logge inn i postman er nødvendig og at det kan være et unntak
-  - datatilsynet sier at unntak *kan* brukes dersom f.eks. "Den registrerte har gitt et uttrykkelig og informert samtykke"[[3]]
+  - datatilsynet sier at unntak *kan* brukes dersom f.eks. "Den registrerte har gitt et uttrykkelig og informert samtykke"[[4]]
 
-[2]: https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/overforing-av-personopplysninger-ut-av-eos/
-[3]: https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/overforing-av-personopplysninger-ut-av-eos/unntak/
+[3]: https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/overforing-av-personopplysninger-ut-av-eos/
+[4]: https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/overforing-av-personopplysninger-ut-av-eos/unntak/
 
 ---
 
@@ -63,37 +64,37 @@
 
 ---
 
-# insomnia[[4]]
+# insomnia[[5]]
 
 - grafisk grensesnitt er open source
 - støtter blant annet også protokoller som GraphQL, gRPC og WebSockets
-- krever innlogging[[5]] dersom man vil ha mer enn én lokal samling av forespørsler, og deling av disse med andre
+- krever innlogging[[6]] dersom man vil ha mer enn én lokal samling av forespørsler, og deling av disse med andre
   - krever sannsynligvis behandlingsgrunnlag dersom man vil benytte dette i jobbsammenheng
 - har git sync som betalt feature, er ellers ganske dårlig på dataportabilitet utenfor applikasjonen
   - lokalt lagrede samlinger lagres i NeDB-database
   - man kan manuelt eksportere json som kan importeres igjen, men det er ikke en kjempesmud opplevelse
 
-[4]: https://github.com/Kong/insomnia
-[5]: https://github.com/Kong/insomnia/issues/6577
+[5]: https://github.com/Kong/insomnia
+[6]: https://github.com/Kong/insomnia/issues/6577
 
 ---
 
-# insomnium[[6]]
+# insomnium[[7]]
 
 - open source
 - fork av insomnia (versjon fra mai 2023)
 - har ikke noen innlogging, koblinger til skytjenester eller tracking
 - usikker hvor mange features programmet har med tanke på dataportabilitet og automatisert testing
-  - ser uheldigvis litt dårlig ut for sync utover lokal maskin, men det er planlagt å åpne dette opp[[7]]
+  - ser uheldigvis litt dårlig ut for sync utover lokal maskin, men det er planlagt å åpne dette opp[[8]]
 - kodeeieren ser ut til å være veldig glad i mulighetene for å benytte (lokale) LLMs til.. kodegenerering av api-endepunkter??? og dette er høyt prioritert
   - de om det, i guess
 
-[6]: https://github.com/ArchGPT/insomnium
-[7]: https://github.com/ArchGPT/insomnium/discussions/13
+[7]: https://github.com/ArchGPT/insomnium
+[8]: https://github.com/ArchGPT/insomnium/discussions/13
 
 ---
 
-# hoppscotch[[8]]
+# hoppscotch[[9]]
 
 - open source
 - webversjon, først og fremst, med desktopklient og kommandolinjeverktøy i alpha
@@ -104,11 +105,11 @@
 - deling av samlinger kan gjøres med import/export-funksjon eller i skyløsning
   - skyløsning introduserer tidligere nevnt GDPR-problematikk med mindre man setter opp hoppscotch selv (self-host)
 
-[8]: https://docs.hoppscotch.io/
+[9]: https://docs.hoppscotch.io/
 
 ---
 
-# bruno[[9]]
+# bruno[[10]]
 
 - min favoritt :)
 - open source
@@ -117,12 +118,12 @@
   - f.eks. sammen med APIet man ønsker å ha en samling av testforespørsler til?
   - dataportabilitet og samarbeid kan dermed løses dermed med ditt valg av versjonskontroll
   - samlinger kan leses i grafisk grensesnitt, i kommandolinje, og i vscode-extension
-- tester kan skrives i javascript, eller med deklarative "assertions" i grensesnitt[[10]]
-- eieren av bruno ser ut til å ha ganske gode meninger om hva som kreves for å fortsette å tilby et godt verktøy for allmenheten[[11]]
+- tester kan skrives i javascript, eller med deklarative "assertions" i grensesnitt[[11]]
+- eieren av bruno ser ut til å ha ganske gode meninger om hva som kreves for å fortsette å tilby et godt verktøy for allmenheten[[12]]
 
-[9]: https://www.usebruno.com/
-[10]: https://docs.usebruno.com/testing/introduction.html
-[11]: https://github.com/usebruno/bruno/discussions/269#discussioncomment-7822943
+[10]: https://www.usebruno.com/
+[11]: https://docs.usebruno.com/testing/introduction.html
+[12]: https://github.com/usebruno/bruno/discussions/269#discussioncomment-7822943
 
 ---
 
