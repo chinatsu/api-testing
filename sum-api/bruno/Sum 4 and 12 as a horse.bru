@@ -1,0 +1,20 @@
+meta {
+  name: Sum 4 and 12 as a horse
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8000/sum/4/12
+  body: none
+  auth: none
+}
+
+headers {
+  identity: horse
+}
+
+assert {
+  res.status: eq 200
+  res.body.sum: eq 16
+}

@@ -1,6 +1,7 @@
 from fastapi import FastAPI, Header, HTTPException
 from pydantic import BaseModel
 from typing import Annotated
+import uvicorn
 
 class Square(BaseModel):
     value: int
@@ -19,3 +20,6 @@ async def square_item(item: Square):
         return item
     item.value = item.value ** 2
     return item
+
+def run():
+    uvicorn.run("main:app", port=8000, reload=True)

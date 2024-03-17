@@ -1,0 +1,22 @@
+meta {
+  name: Square 4
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8000/square/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "value": 4
+  }
+}
+
+assert {
+  res.status: eq 200
+  res.body.value: eq 16
+}
