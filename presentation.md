@@ -20,7 +20,7 @@
 
 ---
 
-# postman[1]
+# postman[[1]]
 
 - et populært grafisk verktøy for å gjøre HTTP-forespørsler
 - i tillegg til REST støttes blant annet SOAP, GraphQL og WebSockets
@@ -42,13 +42,14 @@
 
 # hva synes datatilsynet om det?
 
-- min tolkning av det datatilsynet sier[2] er at jobb-eposten din er personopplysninger som krever behandlingsgrunnlag
+- min tolkning av det datatilsynet sier[[2]] er at jobb-eposten din er personopplysninger som krever behandlingsgrunnlag
 - dersom man ikke har et behandlingsgrunnlag er overføringen ulovlig
 
 - det kan hende at man i noen tilfeller kan kalle det å opprette bruker og logge inn i postman er nødvendig og at det kan være et unntak
-  - datatilsynet sier at unntak *kan* brukes dersom f.eks. "Den registrerte har gitt et uttrykkelig og informert samtykke"[3]
+  - datatilsynet sier at unntak *kan* brukes dersom f.eks. "Den registrerte har gitt et uttrykkelig og informert samtykke"[[3]]
 
 [2]: https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/overforing-av-personopplysninger-ut-av-eos/
+[3]: https://www.datatilsynet.no/rettigheter-og-plikter/virksomhetenes-plikter/overforing-av-personopplysninger-ut-av-eos/unntak/
 
 ---
 
@@ -62,11 +63,11 @@
 
 ---
 
-# insomnia[4]
+# insomnia[[4]]
 
 - grafisk grensesnitt er open source
 - støtter blant annet også protokoller som GraphQL, gRPC og WebSockets
-- krever innlogging[5] dersom man vil ha mer enn én lokal samling av forespørsler, og deling av disse med andre
+- krever innlogging[[5]] dersom man vil ha mer enn én lokal samling av forespørsler, og deling av disse med andre
   - krever sannsynligvis behandlingsgrunnlag dersom man vil benytte dette i jobbsammenheng
 - har git sync som betalt feature, er ellers ganske dårlig på dataportabilitet utenfor applikasjonen
   - lokalt lagrede samlinger lagres i NeDB-database
@@ -77,14 +78,14 @@
 
 ---
 
-# insomnium[6]
+# insomnium[[6]]
 
 - open source
 - fork av insomnia (versjon fra mai 2023)
 - har ikke noen innlogging, koblinger til skytjenester eller tracking
 - usikker hvor mange features programmet har med tanke på dataportabilitet og automatisert testing
-  - ser uheldigvis litt dårlig ut for sync utover lokal maskin, men det er planlagt å åpne dette opp[7]
-- kodeeieren ser ut til å være veldig glad i mulighetene for å benytte (lokale) LLMs til.. kodegenerering av api-endepunkter??? og dette er høyt prioritert[7]
+  - ser uheldigvis litt dårlig ut for sync utover lokal maskin, men det er planlagt å åpne dette opp[[7]]
+- kodeeieren ser ut til å være veldig glad i mulighetene for å benytte (lokale) LLMs til.. kodegenerering av api-endepunkter??? og dette er høyt prioritert
   - de om det, i guess
 
 [6]: https://github.com/ArchGPT/insomnium
@@ -92,7 +93,7 @@
 
 ---
 
-# hoppscotch[8]
+# hoppscotch[[8]]
 
 - open source
 - webversjon, først og fremst, med desktopklient og kommandolinjeverktøy i alpha
@@ -107,7 +108,7 @@
 
 ---
 
-# bruno[9]
+# bruno[[9]]
 
 - min favoritt :)
 - open source
@@ -116,8 +117,8 @@
   - f.eks. sammen med APIet man ønsker å ha en samling av testforespørsler til?
   - dataportabilitet og samarbeid kan dermed løses dermed med ditt valg av versjonskontroll
   - samlinger kan leses i grafisk grensesnitt, i kommandolinje, og i vscode-extension
-- tester kan skrives i javascript, eller med deklarative "assertions" i grensesnitt[10]
-- eieren av bruno ser ut til å ha ganske gode meninger om hva som kreves for å fortsette å tilby et godt verktøy for allmenheten[11]
+- tester kan skrives i javascript, eller med deklarative "assertions" i grensesnitt[[10]]
+- eieren av bruno ser ut til å ha ganske gode meninger om hva som kreves for å fortsette å tilby et godt verktøy for allmenheten[[11]]
 
 [9]: https://www.usebruno.com/
 [10]: https://docs.usebruno.com/testing/introduction.html
