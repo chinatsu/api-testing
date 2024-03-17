@@ -131,10 +131,10 @@
 
 det fins en del andre verktøy jeg ikke har snakket om
 
-- curl (https://curl.se/)
+- curl[[13]]
   - krever nok flere programmer (som `jq` og andre ting) for å bli et ordentlig verktøy for testing
   - krever at man er 10/10 komfortabel med kommandolinjeverktøy
-- httpie (https://httpie.io/)
+- httpie[[14]]
   - kommandolinjeversjonen er open source, web og desktop-versjonene er ikke det
   - krever også at man er.. 7/10, kanskje? komfortabel med kommandolinjeverktøy
 - python-requests (eller aiohttp, eller andre python-greier)
@@ -142,9 +142,14 @@ det fins en del andre verktøy jeg ikke har snakket om
   - dette gjelder også http-bibliotek i andre språk
   - det er kanskje ikke alle på teamet som ønsker å spinne opp en notebook for å sjekke APIene sine?
 - http-klient i koderedigeringsprogram
-  - vscode (https://github.com/Huachao/vscode-restclient)
-  - intellij (krever ultimate) (https://www.jetbrains.com/help/idea/http-client-in-product-code-editor.html)
+  - vscode[[15]]
+  - intellij[[16]] (krever ultimate)
   - det er kanskje ikke alle på teamet som ønsker å benytte slike programmer?
+
+[13]: https://curl.se/
+[14]: https://httpie.io/
+[15]: https://github.com/Huachao/vscode-restclient
+[16]: https://www.jetbrains.com/help/idea/http-client-in-product-code-editor.html
 
 ---
 
