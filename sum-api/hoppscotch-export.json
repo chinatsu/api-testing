@@ -1,0 +1,90 @@
+{
+    "v": 2,
+    "name": "Sum API",
+    "folders": [],
+    "requests": [
+        {
+            "v": "1",
+            "endpoint": "http://localhost:8000/sum/2/14",
+            "name": "Sum 2 and 14",
+            "params": [],
+            "headers": [],
+            "method": "GET",
+            "auth": {
+                "authType": "inherit",
+                "authActive": true
+            },
+            "preRequestScript": "",
+            "testScript": "pw.test(\"Status code should be 200\", ()=> {\n    pw.expect(pw.response.status).toBe(200);\n});\n\npw.test(\"Sum should be 16\", ()=> {\n    pw.expect(pw.response.body.sum).toBe(16);\n});",
+            "body": {
+                "contentType": null,
+                "body": null
+            }
+        },
+        {
+            "v": "1",
+            "endpoint": "http://localhost:8000/sum/2/14",
+            "name": "Sum 2 and 14 as a horse",
+            "params": [],
+            "headers": [
+                {
+                    "active": true,
+                    "key": "identity",
+                    "value": "horse"
+                }
+            ],
+            "method": "GET",
+            "auth": {
+                "authType": "inherit",
+                "authActive": true
+            },
+            "preRequestScript": "",
+            "testScript": "pw.test(\"Status code should be 200\", ()=> {\n    pw.expect(pw.response.status).toBe(200);\n});\n\npw.test(\"Sum should be 16\", ()=> {\n    pw.expect(pw.response.body.sum).toBe(16);\n});",
+            "body": {
+                "contentType": null,
+                "body": null
+            }
+        },
+        {
+            "v": "1",
+            "endpoint": "http://localhost:8000/square/",
+            "name": "Square 4",
+            "params": [],
+            "headers": [],
+            "method": "POST",
+            "auth": {
+                "authType": "inherit",
+                "authActive": true
+            },
+            "preRequestScript": "",
+            "testScript": "pw.test(\"Status code should be 200\", ()=> {\n    pw.expect(pw.response.status).toBe(200);\n});\n\npw.test(\"Square of 4 should be 16\", ()=> {\n    pw.expect(pw.response.body.value).toBe(16);\n});",
+            "body": {
+                "contentType": "application/json",
+                "body": "{\n  \"value\": 4\n}"
+            }
+        },
+        {
+            "v": "1",
+            "endpoint": "http://localhost:8000/square/",
+            "name": "Square 50",
+            "params": [],
+            "headers": [],
+            "method": "POST",
+            "auth": {
+                "authType": "inherit",
+                "authActive": true
+            },
+            "preRequestScript": "",
+            "testScript": "pw.test(\"Status code should be 200\", ()=> {\n    pw.expect(pw.response.status).toBe(200);\n});\n\npw.test(\"Square of 50 should be 2500\", ()=> {\n    pw.expect(pw.response.body.value).toBe(2500);\n});",
+            "body": {
+                "contentType": "application/json",
+                "body": "{\n  \"value\": 50\n}"
+            }
+        }
+    ],
+    "auth": {
+        "authType": "none",
+        "authActive": true
+    },
+    "headers": []
+}
